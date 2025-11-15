@@ -2,39 +2,65 @@
 <html>
 <head>
     <title>ele games</title>
-    
-    <!-- Link to external stylesheet -->
+
+    <!-- External stylesheet -->
     <link rel="stylesheet" href="styles.css" />
-    
-    <!-- Add Major Mono Display font -->
+
+    <!-- Major Mono font -->
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
-    
+
     <style>
         body {
             font-family: 'Major Mono Display', monospace;
-            background-color: blue;
+            background: linear-gradient(135deg, #3a8bff, #6fc3ff);
             color: black;
-            /* Fake bold effect */
-            text-shadow: 1px 0 black, 0 1px black, 1px 1px black;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 30px;
+            font-size: 50px;
+            text-shadow: 3px 3px black;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 32px;
+            text-shadow: 2px 2px black;
+        }
+
+        .game-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(6px);
+            width: 80%;
+            max-width: 900px;
+            margin: 20px auto;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
         }
     </style>
 </head>
+
 <body>
     <h1>ele. games</h1>
 
-    <h2>Gate Solitaire</h2>
-    <div>
-        <script src="https://cdn.htmlgames.com/embed.js?game=GateSolitaire&amp;bgcolor=white"></script>
+    <div class="game-card">
+        <h2>Gate Solitaire</h2>
+        <script src="https://cdn.htmlgames.com/embed.js?game=GateSolitaire&bgcolor=white"></script>
     </div>
 
-    <h2>Pac Maze</h2>
-    <div>
-        <script src="https://cdn.htmlgames.com/embed.js?game=PacMaze&amp;bgcolor=white"></script>
+    <div class="game-card">
+        <h2>Pac Maze</h2>
+        <script src="https://cdn.htmlgames.com/embed.js?game=PacMaze&bgcolor=white"></script>
     </div>
 
-    <h2>Galaxy Shooter</h2>
-    <div>
-        <script src="https://cdn.htmlgames.com/embed.js?game=GalaxyShooter&amp;bgcolor=white"></script>
+    <div class="game-card">
+        <h2>Galaxy Shooter</h2>
+        <script src="https://cdn.htmlgames.com/embed.js?game=GalaxyShooter&bgcolor=white"></script>
     </div>
+
 </body>
 </html>
